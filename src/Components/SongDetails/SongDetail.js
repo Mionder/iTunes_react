@@ -4,7 +4,7 @@ export default class Song extends Component{
   render(){
     const {artist,track,collection,id,trackTime,trackCount,collectionPrice,trackPrice,bgcolor,previewUrl} = this.props;
     return(
-            <div className="details__song">
+            <div className={bgcolor ? "details__song" : "details__song__new"} >
                 <div className="songname__block">
                         <p className="title">{artist} - {track}</p>
                         <i className="fas fa-music"></i>

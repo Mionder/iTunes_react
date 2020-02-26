@@ -1,0 +1,20 @@
+.caption__bar{
+    width: 200px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.nav__bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 24px;
+}
+
+.caption__plus{
+    width: 50px
+}
+li{
+    list-style: none;
+}
+.caption__img{
+    width: 100px;
+}

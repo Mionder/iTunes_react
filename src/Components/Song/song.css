@@ -1,4 +1,4 @@
-.lol{
+.bgstatic{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,36 +24,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-background-color: #eef7ff;
-width: 100%;
-}
-
-.songname__block{
-    display: flex;
-    align-items: center;
-    color: rgb(94, 94, 94);
-    font-weight: 500;
-    font-size: 20px;
-    padding-bottom: 15px;
-    /* background-color: #ccdff0; */
-}
-
-.details_new{
     background-color: #eef7ff;
+    width: 100%;
 }
 
-.rows{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.info span{
-    font-weight: 700;
-}
 
-.info{
-    font-size: 14px;
-}
 .MuiTypography-body1{
     width: 100%;
 }

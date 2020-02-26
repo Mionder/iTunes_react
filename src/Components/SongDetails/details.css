@@ -1,6 +1,41 @@
 .details__song{
     padding: 0px 16px;
+    background-color: #ccdff0;
+}
+.details__song__new{
+    padding: 0px 16px;
+    background-color: #eef7ff; 
 }
 audio{
     padding-top: 10px;
+}
+.MuiExpansionPanelDetails-root{
+    background-color: #ccdff0;
+    padding: 24px;
+}
+
+.songname__block{
+    display: flex;
+    align-items: center;
+    color: rgb(94, 94, 94);
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+.details_new{
+    background-color: #eef7ff;
+}
+
+.rows{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info span{
+    font-weight: 700;
+}
+
+.info{
+    font-size: 14px;
 }

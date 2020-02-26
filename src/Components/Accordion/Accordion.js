@@ -52,7 +52,7 @@ const ExpansionPanelSummary = withStyles({
 
 const ExpansionPanelDetails = withStyles(theme => ({
   root: {
-    padding: theme.spacing(2),
+    padding: '24px',
     display: 'block',
     
   },

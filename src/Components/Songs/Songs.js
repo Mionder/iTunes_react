@@ -3,8 +3,8 @@ import './songs.css';
 import axios from 'axios';
 import Accordion from '../Accordion/Accordion';
 import cors from 'cors';
-
-export default class Captions extends Component{
+import Captions from '../Captions/Captions';
+export default class Songs extends Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -60,6 +60,7 @@ export default class Captions extends Component{
                             </div>
                     </div>
                 </div>
+                <Captions />
                 <Accordion music={music}/>
             </div>
         );

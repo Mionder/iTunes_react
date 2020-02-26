@@ -17,7 +17,7 @@ export default class Song extends Component{
   render(){
     const {pictureWork,artist,track,collection,genre,id,bgcolor} = this.props;
     return(
-            <div className={bgcolor==1 ? "lol" : "bgnew"} onClick={this.changeIcon}>
+            <div className={bgcolor==1 ? "bgstatic" : "bgnew"} onClick={this.changeIcon}>
               <img src={pictureWork} alt="no-pic" className="album__picture"/>
               <p className="label">{artist}</p>
               <p className="label">{track}</p>
