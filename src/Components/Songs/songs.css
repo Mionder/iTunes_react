@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{ 
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    background-color: #eef7ff;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d2d5da;
+    max-width: 250px;
+    margin: auto;
+}
+.search input{
+    height: 25px;
+    width: 200px;
+    padding: 5px 10px;
+    font-size: 12px;
+    overflow: hidden;
+    border: none;
+}
+.search__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    height: 25px;
+    width: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.search__icon i{
+    color:#6a7178;
+    font-size: 12px;   
+}
+
+.wrapper__songs{
+    margin-bottom: 20px;
+}
