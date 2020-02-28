@@ -4,13 +4,15 @@ import axios from 'axios';
 import Accordion from '../Accordion/Accordion';
 import cors from 'cors';
 import Captions from '../Captions/Captions';
+import Preloader from '../Preloader/Preloader';
+
 export default class Songs extends Component{
     constructor(props) {
         super(props);
         this.state = {
             value: '',
-            music: []
-            
+            music: [],
+            isLoad: false
         };
     
         this.handleChange = this.handleChange.bind(this);
@@ -29,11 +31,12 @@ export default class Songs extends Component{
       handleSubmit(event) {
         console.log(this.state.value);
         event.preventDefault();
-        
+        this.setState({isLoad: false})
         axios.get("https://itunes.apple.com/search?term="+this.state.value).then((res)=>{
             
             this.setState({
-                music: res.data.results
+                music: res.data.results,
+                isLoad: true
             });
             console.log(this.state.music);
         })
@@ -42,13 +45,20 @@ export default class Songs extends Component{
     onGetSongs = () =>{
         axios.get("https://itunes.apple.com/search?term=Beatles", cors()).then((responce)=>{
             this.setState({
-                music: responce.data.results
+                music: responce.data.results,
+                isLoad: true
             });
         })
     }
     
       render() {
-          const {music} = this.state;
+          const {music, isLoad} = this.state;
+          if(isLoad === false){
+              return(
+                  <Preloader />
+              )
+          }
+          else{
         return (
             
             <div className="container">
@@ -65,4 +75,4 @@ export default class Songs extends Component{
             </div>
         );
       }
-    }
+    }}
